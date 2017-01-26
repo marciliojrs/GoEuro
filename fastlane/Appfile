@@ -1,0 +1,8 @@
+# The bundle identifier of your app
+app_identifier "{app_identifier}"
+
+# Your Apple email address
+apple_id "ios@helabs.com.br"
+
+# Developer Portal Team ID
+team_id "{team_id}"

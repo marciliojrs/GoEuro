@@ -1,0 +1,130 @@
+version_number = FastlaneCore::CommandExecutor.execute(command: "git describe --tags --always --abbrev=0", print_all: false)
+build_number   = FastlaneCore::CommandExecutor.execute(command: "git rev-list HEAD --count")
+app_version    = "#{version_number.strip} (#{build_number.strip})"
+skip_wait 	   = true
+ipa_path       = "./ipa/GoEuro.ipa"
+dsym_path      = "./ipa/GoEuro.app.dSYM.zip" 
+
+update_fastlane
+
+fastlane_version "2.3.0"
+default_platform :ios
+
+platform :ios do
+
+  ############################## PRE ##############################
+
+  before_all do |lane, options|
+  	if lane.to_s != "add_device"
+  		# Verify if all files are commited to repo
+	    ensure_git_status_clean
+
+	    # Setup environment variables for Slack and Crashlytics
+	    setup_environment_variables
+
+	    # Install all pods
+	    cocoapods(use_bundle_exec: false)
+  	end
+  end
+
+  ######################### PUBLIC LANES ##########################
+
+  lane :test do
+ 	scan(
+ 	 skip_slack: true,
+ 	 scheme: "GoEuro",
+ 	 device: "iPad Air (9.3)",
+ 	 output_types: "html",
+ 	 clean: true,
+ 	 skip_build: true
+ 	)
+  end
+
+  desc "Updates a new beta version to Crashlytics Beta"
+  lane :crashlytics do
+  	# Create or request the correct certificate
+  	match(type: "adhoc")
+
+  	# Build and generate IPA file
+  	gym
+
+  	# Send to Crashlytics Beta
+  	crashlytics(ipa_path: ipa_path)
+  end
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  lane :beta do
+  	# Create or request the correct certificate
+  	match(type: "appstore")
+
+  	# Build and generate IPA file
+  	gym
+
+  	# Upload a new build to TestFlight
+    pilot(
+      ipa: ipa_path,
+      skip_submission: true,
+      skip_waiting_for_build_processing: skip_wait,
+      team_id: ""
+    )
+
+  	# Upload dSYM File to Crashlytics
+  	upload_symbols_to_crashlytics(dsym_path: dsym_path)
+
+    post_to_slack(destination: "TestFlight")
+  end
+
+  desc "Add new device to Member Center"
+  lane :add_device do
+  	device_name = prompt(text: "Device name: ")
+  	device_udid = prompt(text: "Device UDID: ")
+
+  	register_devices(devices: {device_name => device_udid})
+  	refresh_profiles
+  end
+
+  ######################### HELPER #########################
+
+  desc "Post a formatted message on Slack #wellzesta-staff channel"
+  private_lane :post_to_slack do |options|
+    destination    = options[:destination]
+
+    slack(
+      message: "<!here|here>: New :ios: version of GoEuro has been submitted to *#{destination}* and will be available soon :rocket:",
+      payload: { 
+        'Version' => app_version
+      }
+	)
+  end
+
+  # Helper lane to refresh all provisioning profiles with new devices added
+  private_lane :refresh_profiles do |options|
+  	match(force_for_new_devices: true)
+  end
+
+  def setup_environment_variables
+  	ENV["SLACK_URL"]			            = ""
+    ENV["CRASHLYTICS_API_TOKEN"]      = ""
+    ENV["CRASHLYTICS_BUILD_SECRET"]   = ""
+    ENV["CRASHLYTICS_FRAMEWORK_PATH"] = "./Pods/Crashlytics/"
+  end
+
+  ######################### AFTER #########################
+
+  after_all do |lane|
+    notification(
+      title: "GoEuro",
+      subtitle: "Fastlane finished successfully.",
+      message: "Lane: '#{lane}'"
+    )
+  end
+
+  error do |lane, exception|
+    notification(
+      title: "GoEuro",
+      subtitle: "Fastlane finished with errors.",
+      message: "Lane: '#{lane}'\nExpcetion: '#{exception}'"
+    )
+  end
+
+end

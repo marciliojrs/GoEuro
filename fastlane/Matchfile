@@ -1,0 +1,6 @@
+git_url "ssh://git@github.com/Helabs/ios-certificates.git"
+
+type "development" # The default type, can be: appstore, adhoc or development
+
+app_identifier "{app_identifier}" # The bundle identifier of your app
+username "ios@helabs.com.br"
