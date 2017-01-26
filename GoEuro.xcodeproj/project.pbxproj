@@ -12,6 +12,16 @@
 		68EA9169756B3481058AE6B9 /* Pods_GoEuroCommon_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7202077BB32C74AC584FC767 /* Pods_GoEuroCommon_Tests.framework */; };
 		830F26B959140336B5CB0DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172FF28D9AEA2508769CD251 /* LaunchScreen.storyboard */; };
 		A887D59736118BE816CADA31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5092B5CC3FC56A4C86CAE3FA /* Assets.xcassets */; };
+		AD5838401E3A135B0039B975 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58383F1E3A135B0039B975 /* Flight.swift */; };
+		AD5838421E3A13620039B975 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838411E3A13620039B975 /* Train.swift */; };
+		AD5838441E3A136F0039B975 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838431E3A136F0039B975 /* Bus.swift */; };
+		AD5838461E3A13B10039B975 /* EnumKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838451E3A13B10039B975 /* EnumKey.swift */; };
+		AD5838481E3A14D50039B975 /* TravelMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838471E3A14D50039B975 /* TravelMode.swift */; };
+		AD58384B1E3A158A0039B975 /* GoEuroRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58384A1E3A158A0039B975 /* GoEuroRestApi.swift */; };
+		AD58384D1E3A15920039B975 /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58384C1E3A15920039B975 /* Providers.swift */; };
+		AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58384E1E3A159B0039B975 /* NetworkClient.swift */; };
+		AD5838521E3A16EB0039B975 /* ProviderLogoTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */; };
+		AD5838541E3A17D20039B975 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838531E3A17D20039B975 /* R.generated.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -42,6 +52,16 @@
 		74E223985ACDA962D0A1C77B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D13F5FB2A82685CCAA78D9F /* Pods-GoEuroCommon-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroCommon-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroCommon-Tests/Pods-GoEuroCommon-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		90767C99D477C3826B6921B6 /* GoEuro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD58383F1E3A135B0039B975 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		AD5838411E3A13620039B975 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		AD5838431E3A136F0039B975 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		AD5838451E3A13B10039B975 /* EnumKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumKey.swift; sourceTree = "<group>"; };
+		AD5838471E3A14D50039B975 /* TravelMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelMode.swift; sourceTree = "<group>"; };
+		AD58384A1E3A158A0039B975 /* GoEuroRestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoEuroRestApi.swift; sourceTree = "<group>"; };
+		AD58384C1E3A15920039B975 /* Providers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
+		AD58384E1E3A159B0039B975 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderLogoTransformer.swift; sourceTree = "<group>"; };
+		AD5838531E3A17D20039B975 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +104,9 @@
 		1814DD3FFFDED1D91379C7B5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AD5838491E3A157D0039B975 /* Target */,
+				AD58384C1E3A15920039B975 /* Providers.swift */,
+				AD58384E1E3A159B0039B975 /* NetworkClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -165,6 +188,7 @@
 		6409D83B4CFB13386B8B17D6 /* R */ = {
 			isa = PBXGroup;
 			children = (
+				AD5838531E3A17D20039B975 /* R.generated.swift */,
 			);
 			path = R;
 			sourceTree = "<group>";
@@ -179,6 +203,11 @@
 		80153FCD86E5C93DDFE576D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AD5838501E3A16DC0039B975 /* Transformers */,
+				AD58383F1E3A135B0039B975 /* Flight.swift */,
+				AD5838411E3A13620039B975 /* Train.swift */,
+				AD5838431E3A136F0039B975 /* Bus.swift */,
+				AD5838471E3A14D50039B975 /* TravelMode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +215,7 @@
 		88CB00F82ACA0D8102420245 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				AD5838451E3A13B10039B975 /* EnumKey.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -215,6 +245,22 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AD5838491E3A157D0039B975 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				AD58384A1E3A158A0039B975 /* GoEuroRestApi.swift */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		AD5838501E3A16DC0039B975 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */,
+			);
+			path = Transformers;
 			sourceTree = "<group>";
 		};
 		CC4A9482FE4618F7B30D63E9 = {
@@ -528,7 +574,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD58384D1E3A15920039B975 /* Providers.swift in Sources */,
+				AD5838461E3A13B10039B975 /* EnumKey.swift in Sources */,
 				ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */,
+				AD5838481E3A14D50039B975 /* TravelMode.swift in Sources */,
+				AD5838421E3A13620039B975 /* Train.swift in Sources */,
+				AD5838521E3A16EB0039B975 /* ProviderLogoTransformer.swift in Sources */,
+				AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */,
+				AD5838441E3A136F0039B975 /* Bus.swift in Sources */,
+				AD58384B1E3A158A0039B975 /* GoEuroRestApi.swift in Sources */,
+				AD5838541E3A17D20039B975 /* R.generated.swift in Sources */,
+				AD5838401E3A135B0039B975 /* Flight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
