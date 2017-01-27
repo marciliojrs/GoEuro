@@ -45,7 +45,17 @@ extension GoEuroRestApi: TargetType {
     }
 
     var sampleData: Data {
-        return Data()
+        switch self {
+        case .trains:
+            let data = try? JSONReader.readJSONDataFrom(file: R.file.trainsJson.name)
+            return data ?? Data()
+        case .flights:
+            let data = try? JSONReader.readJSONDataFrom(file: R.file.flightsJson.name)
+            return data ?? Data()
+        case .buses:
+            let data = try? JSONReader.readJSONDataFrom(file: R.file.busesJson.name)
+            return data ?? Data()
+        }
     }
 
     var task: Task {

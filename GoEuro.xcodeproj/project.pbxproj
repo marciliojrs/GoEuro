@@ -46,6 +46,11 @@
 		AD6FD6C81E3B9066002C3FEA /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C71E3B9066002C3FEA /* Appearance.swift */; };
 		AD6FD6CA1E3B92FE002C3FEA /* UINavigationController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */; };
 		AD6FD6CC1E3B9A82002C3FEA /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6CB1E3B9A82002C3FEA /* String+Range.swift */; };
+		AD6FD6CF1E3B9B78002C3FEA /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = AD6FD6CE1E3B9B78002C3FEA /* Flights.json */; };
+		AD6FD6D11E3B9B97002C3FEA /* Buses.json in Resources */ = {isa = PBXBuildFile; fileRef = AD6FD6D01E3B9B97002C3FEA /* Buses.json */; };
+		AD6FD6D51E3B9BBD002C3FEA /* Trains.json in Resources */ = {isa = PBXBuildFile; fileRef = AD6FD6D41E3B9BBD002C3FEA /* Trains.json */; };
+		AD6FD6D71E3B9C05002C3FEA /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6D61E3B9C05002C3FEA /* FileReader.swift */; };
+		AD6FD6D91E3B9C23002C3FEA /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6D81E3B9C23002C3FEA /* JSONReader.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -110,6 +115,11 @@
 		AD6FD6C71E3B9066002C3FEA /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBar.swift"; sourceTree = "<group>"; };
 		AD6FD6CB1E3B9A82002C3FEA /* String+Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
+		AD6FD6CE1E3B9B78002C3FEA /* Flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
+		AD6FD6D01E3B9B97002C3FEA /* Buses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buses.json; sourceTree = "<group>"; };
+		AD6FD6D41E3B9BBD002C3FEA /* Trains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Trains.json; sourceTree = "<group>"; };
+		AD6FD6D61E3B9C05002C3FEA /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		AD6FD6D81E3B9C23002C3FEA /* JSONReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -161,6 +171,7 @@
 		1814DD3FFFDED1D91379C7B5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AD6FD6CD1E3B9B61002C3FEA /* Stubbed Response */,
 				AD5838491E3A157D0039B975 /* Target */,
 				AD58384C1E3A15920039B975 /* Providers.swift */,
 				AD58384E1E3A159B0039B975 /* NetworkClient.swift */,
@@ -205,6 +216,8 @@
 				AD6FD6C11E3B6270002C3FEA /* DownloadableImage.swift */,
 				AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */,
 				AD6FD6C51E3B8F0C002C3FEA /* Stylesheet.swift */,
+				AD6FD6D61E3B9C05002C3FEA /* FileReader.swift */,
+				AD6FD6D81E3B9C23002C3FEA /* JSONReader.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -341,6 +354,16 @@
 				AD6FD6BD1E3B5D00002C3FEA /* ObservableType+TravelMode.swift */,
 			);
 			path = RxOperators;
+			sourceTree = "<group>";
+		};
+		AD6FD6CD1E3B9B61002C3FEA /* Stubbed Response */ = {
+			isa = PBXGroup;
+			children = (
+				AD6FD6CE1E3B9B78002C3FEA /* Flights.json */,
+				AD6FD6D01E3B9B97002C3FEA /* Buses.json */,
+				AD6FD6D41E3B9BBD002C3FEA /* Trains.json */,
+			);
+			path = "Stubbed Response";
 			sourceTree = "<group>";
 		};
 		CC4A9482FE4618F7B30D63E9 = {
@@ -498,8 +521,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6FD6D11E3B9B97002C3FEA /* Buses.json in Resources */,
 				AD6FD6A61E3B53B9002C3FEA /* TravelCell.xib in Resources */,
+				AD6FD6CF1E3B9B78002C3FEA /* Flights.json in Resources */,
 				E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */,
+				AD6FD6D51E3B9BBD002C3FEA /* Trains.json in Resources */,
 				830F26B959140336B5CB0DA0 /* LaunchScreen.storyboard in Resources */,
 				A887D59736118BE816CADA31 /* Assets.xcassets in Resources */,
 				DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */,
@@ -671,6 +697,7 @@
 				AD6FD6AA1E3B58A3002C3FEA /* BaseViewController.swift in Sources */,
 				AD6FD69C1E3B50E2002C3FEA /* ContainerViewController.swift in Sources */,
 				AD6FD6A21E3B51EA002C3FEA /* TrainsViewController.swift in Sources */,
+				AD6FD6D71E3B9C05002C3FEA /* FileReader.swift in Sources */,
 				ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */,
 				AD5838481E3A14D50039B975 /* TravelMode.swift in Sources */,
 				AD6FD6CC1E3B9A82002C3FEA /* String+Range.swift in Sources */,
@@ -682,6 +709,7 @@
 				AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */,
 				AD5838441E3A136F0039B975 /* Bus.swift in Sources */,
 				AD6FD6BA1E3B5C23002C3FEA /* SectionViewModelType.swift in Sources */,
+				AD6FD6D91E3B9C23002C3FEA /* JSONReader.swift in Sources */,
 				AD6FD6C61E3B8F0C002C3FEA /* Stylesheet.swift in Sources */,
 				AD6FD6C21E3B6270002C3FEA /* DownloadableImage.swift in Sources */,
 				AD6FD6C81E3B9066002C3FEA /* Appearance.swift in Sources */,
