@@ -27,7 +27,7 @@ class TravelCell: UITableViewCell {
                 .addDisposableTo(rx_disposeBag)
 
             viewModel.price
-                .drive(priceLabel.rx.text)
+                .drive(priceLabel.rx.attributedText)
                 .addDisposableTo(rx_disposeBag)
 
             viewModel.numberOfStops

@@ -45,6 +45,7 @@
 		AD6FD6C61E3B8F0C002C3FEA /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C51E3B8F0C002C3FEA /* Stylesheet.swift */; };
 		AD6FD6C81E3B9066002C3FEA /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C71E3B9066002C3FEA /* Appearance.swift */; };
 		AD6FD6CA1E3B92FE002C3FEA /* UINavigationController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */; };
+		AD6FD6CC1E3B9A82002C3FEA /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6CB1E3B9A82002C3FEA /* String+Range.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -108,6 +109,7 @@
 		AD6FD6C51E3B8F0C002C3FEA /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
 		AD6FD6C71E3B9066002C3FEA /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBar.swift"; sourceTree = "<group>"; };
+		AD6FD6CB1E3B9A82002C3FEA /* String+Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -262,6 +264,7 @@
 				AD5838781E3B4C5F0039B975 /* RxOperators */,
 				AD6FD6C31E3B6294002C3FEA /* UIImageView+Rx.swift */,
 				AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */,
+				AD6FD6CB1E3B9A82002C3FEA /* String+Range.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 				AD6FD6A21E3B51EA002C3FEA /* TrainsViewController.swift in Sources */,
 				ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */,
 				AD5838481E3A14D50039B975 /* TravelMode.swift in Sources */,
+				AD6FD6CC1E3B9A82002C3FEA /* String+Range.swift in Sources */,
 				AD6FD6B01E3B58FD002C3FEA /* FlightsViewModel.swift in Sources */,
 				AD58387A1E3B4C6B0039B975 /* ObservableType+Mappable.swift in Sources */,
 				AD5838421E3A13620039B975 /* Train.swift in Sources */,
