@@ -13,5 +13,5 @@ extension ObservableType where E == [TravelMode] {
     func viewModels() -> Observable<[TravelItemViewModel]> {
         return map { $0.map { TravelItemViewModel.init(item: $0) } }
     }
-    
+
 }

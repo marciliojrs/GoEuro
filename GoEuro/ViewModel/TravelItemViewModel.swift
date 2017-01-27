@@ -37,7 +37,7 @@ class TravelItemViewModel: ViewModel {
     }
 
     var providerLogo: Driver<DownloadableImage> {
-        return .just(.remote(url: item.providerLogo, placeholder: nil))            
+        return .just(.remote(url: item.providerLogo, placeholder: nil))
     }
 
 }

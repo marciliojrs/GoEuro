@@ -6,7 +6,6 @@
 //  Copyright © 2017 GoEuro. All rights reserved.
 //
 
-
 import Foundation
 import RxSwift
 import RxCocoa

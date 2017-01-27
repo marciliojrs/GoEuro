@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var coordinator: AppCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        Appearance.install()
+
         window = UIWindow()
         coordinator = AppCoordinator(window: window!)
         coordinator.start()

@@ -42,6 +42,9 @@
 		AD6FD6BE1E3B5D00002C3FEA /* ObservableType+TravelMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6BD1E3B5D00002C3FEA /* ObservableType+TravelMode.swift */; };
 		AD6FD6C21E3B6270002C3FEA /* DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C11E3B6270002C3FEA /* DownloadableImage.swift */; };
 		AD6FD6C41E3B6294002C3FEA /* UIImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C31E3B6294002C3FEA /* UIImageView+Rx.swift */; };
+		AD6FD6C61E3B8F0C002C3FEA /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C51E3B8F0C002C3FEA /* Stylesheet.swift */; };
+		AD6FD6C81E3B9066002C3FEA /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C71E3B9066002C3FEA /* Appearance.swift */; };
+		AD6FD6CA1E3B92FE002C3FEA /* UINavigationController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -102,6 +105,9 @@
 		AD6FD6BD1E3B5D00002C3FEA /* ObservableType+TravelMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+TravelMode.swift"; sourceTree = "<group>"; };
 		AD6FD6C11E3B6270002C3FEA /* DownloadableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImage.swift; sourceTree = "<group>"; };
 		AD6FD6C31E3B6294002C3FEA /* UIImageView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rx.swift"; sourceTree = "<group>"; };
+		AD6FD6C51E3B8F0C002C3FEA /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		AD6FD6C71E3B9066002C3FEA /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBar.swift"; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -193,8 +199,10 @@
 			children = (
 				6FD32CC67223591CC21EC998 /* Extensions */,
 				88CB00F82ACA0D8102420245 /* Protocols */,
-				AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */,
+				AD6FD6C71E3B9066002C3FEA /* Appearance.swift */,
 				AD6FD6C11E3B6270002C3FEA /* DownloadableImage.swift */,
+				AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */,
+				AD6FD6C51E3B8F0C002C3FEA /* Stylesheet.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			children = (
 				AD5838781E3B4C5F0039B975 /* RxOperators */,
 				AD6FD6C31E3B6294002C3FEA /* UIImageView+Rx.swift */,
+				AD6FD6C91E3B92FE002C3FEA /* UINavigationController+StatusBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -665,10 +674,13 @@
 				AD58387A1E3B4C6B0039B975 /* ObservableType+Mappable.swift in Sources */,
 				AD5838421E3A13620039B975 /* Train.swift in Sources */,
 				AD5838521E3A16EB0039B975 /* ProviderLogoTransformer.swift in Sources */,
+				AD6FD6CA1E3B92FE002C3FEA /* UINavigationController+StatusBar.swift in Sources */,
 				AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */,
 				AD5838441E3A136F0039B975 /* Bus.swift in Sources */,
 				AD6FD6BA1E3B5C23002C3FEA /* SectionViewModelType.swift in Sources */,
+				AD6FD6C61E3B8F0C002C3FEA /* Stylesheet.swift in Sources */,
 				AD6FD6C21E3B6270002C3FEA /* DownloadableImage.swift in Sources */,
+				AD6FD6C81E3B9066002C3FEA /* Appearance.swift in Sources */,
 				AD58384B1E3A158A0039B975 /* GoEuroRestApi.swift in Sources */,
 				AD5838541E3A17D20039B975 /* R.generated.swift in Sources */,
 				AD5838401E3A135B0039B975 /* Flight.swift in Sources */,
