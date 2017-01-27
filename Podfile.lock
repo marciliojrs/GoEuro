@@ -33,6 +33,8 @@ PODS:
     - RxCocoa (~> 3.0)
     - RxSwift (~> 3.0)
   - RxSwift (3.1.0)
+  - RxSwiftExt (2.1.0):
+    - RxSwift (~> 3.0)
   - SwiftDate (4.0.11)
   - SwiftyColor (1.0.0)
 
@@ -51,6 +53,7 @@ DEPENDENCIES:
   - RxCocoa (~> 3.0)
   - RxDataSources (~> 1.0)
   - RxSwift (~> 3.0)
+  - RxSwiftExt
   - SwiftDate (~> 4.0.7)
   - SwiftyColor (~> 1.0.0)
 
@@ -70,9 +73,10 @@ SPEC CHECKSUMS:
   RxCocoa: 50d7564866da9299161e86a263ce12a0873904d8
   RxDataSources: 1de77880bf5b7fcee42102adcd5a5d65e5b81541
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
+  RxSwiftExt: 492a6575cf6afabb8feeed3204bd0f9e2c695e67
   SwiftDate: a36d5ce7c86bed3ed92b583ccbf15045f374ac65
   SwiftyColor: 7fa09db14051bc5d7f539e1c4576665975225992
 
-PODFILE CHECKSUM: 481ef0e41ff31ab3341023b8cc2e2a361d7229c7
+PODFILE CHECKSUM: fcb0d96ede9a43201959a61437196eed460ac0dd
 
 COCOAPODS: 1.1.1

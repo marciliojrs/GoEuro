@@ -22,6 +22,7 @@
 		AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58384E1E3A159B0039B975 /* NetworkClient.swift */; };
 		AD5838521E3A16EB0039B975 /* ProviderLogoTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */; };
 		AD5838541E3A17D20039B975 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838531E3A17D20039B975 /* R.generated.swift */; };
+		AD58387A1E3B4C6B0039B975 /* ObservableType+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838791E3B4C6B0039B975 /* ObservableType+Mappable.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -62,6 +63,7 @@
 		AD58384E1E3A159B0039B975 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderLogoTransformer.swift; sourceTree = "<group>"; };
 		AD5838531E3A17D20039B975 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		AD5838791E3B4C6B0039B975 /* ObservableType+Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Mappable.swift"; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -196,6 +198,7 @@
 		6FD32CC67223591CC21EC998 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AD5838781E3B4C5F0039B975 /* RxOperators */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +264,14 @@
 				AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */,
 			);
 			path = Transformers;
+			sourceTree = "<group>";
+		};
+		AD5838781E3B4C5F0039B975 /* RxOperators */ = {
+			isa = PBXGroup;
+			children = (
+				AD5838791E3B4C6B0039B975 /* ObservableType+Mappable.swift */,
+			);
+			path = RxOperators;
 			sourceTree = "<group>";
 		};
 		CC4A9482FE4618F7B30D63E9 = {
@@ -337,9 +348,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AED13C0D40BF56796F47709 /* Build configuration list for PBXNativeTarget "GoEuro" */;
 			buildPhases = (
+				6C1E3C98C72EE3076F25DEBA /* [CP] Check Pods Manifest.lock */,
 				CAE3E3A4315C115D2B1FDF18 /* R.swift */,
 				4BDAA3C13DC328B8F1D557D0 /* Swiftlint */,
-				6C1E3C98C72EE3076F25DEBA /* [CP] Check Pods Manifest.lock */,
 				D6E86AAF9055394866C5C394 /* Sources */,
 				E609A8794C0F9C448CF60764 /* Frameworks */,
 				3652261490E40B1C628FE9E4 /* Resources */,
@@ -578,6 +589,7 @@
 				AD5838461E3A13B10039B975 /* EnumKey.swift in Sources */,
 				ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */,
 				AD5838481E3A14D50039B975 /* TravelMode.swift in Sources */,
+				AD58387A1E3B4C6B0039B975 /* ObservableType+Mappable.swift in Sources */,
 				AD5838421E3A13620039B975 /* Train.swift in Sources */,
 				AD5838521E3A16EB0039B975 /* ProviderLogoTransformer.swift in Sources */,
 				AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */,

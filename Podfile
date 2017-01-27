@@ -17,6 +17,7 @@ abstract_target 'GoEuroCommon' do
   pod 'RxCocoa',               '~> 3.0'
   pod 'RxDataSources',         '~> 1.0'
   pod 'NSObject+Rx',           '2.0.0'
+  pod 'RxSwiftExt'
   
   pod 'SwiftyColor',           '~> 1.0.0'
   pod 'SwiftDate',             '~> 4.0.7'

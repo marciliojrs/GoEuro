@@ -23,5 +23,29 @@ struct NetworkClient {
 }
 
 extension NetworkClient {
-    
+
+    func fetchTrains() -> Observable<[Train]> {
+        return networkProvider
+            .request(.trains)
+            .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+            .mapJSON()
+            .parseJSONArray()
+    }
+
+    func fetchBuses() -> Observable<[Bus]> {
+        return networkProvider
+            .request(.buses)
+            .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+            .mapJSON()
+            .parseJSONArray()
+    }
+
+    func fetchFlights() -> Observable<[Flight]> {
+        return networkProvider
+            .request(.flights)
+            .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+            .mapJSON()
+            .parseJSONArray()
+    }
+
 }
