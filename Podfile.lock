@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (4.0.1):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
+  - FLAnimatedImage (1.0.12)
   - Moya (8.0.0-beta.5):
     - Moya/Core (= 8.0.0-beta.5)
   - Moya-ObjectMapper (2.2.1):
@@ -20,6 +21,14 @@ PODS:
   - NSObject+Rx (2.0.0):
     - RxSwift
   - ObjectMapper (2.2.1)
+  - PINCache (2.3)
+  - PINRemoteImage (2.1.4):
+    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (2.1.4):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
   - Quick (0.10.0)
   - R.swift (3.1.0):
     - R.swift.Library (~> 3.0.2)
@@ -37,6 +46,7 @@ PODS:
     - RxSwift (~> 3.0)
   - SwiftDate (4.0.11)
   - SwiftyColor (1.0.0)
+  - UIImageViewAligned (0.0.1)
   - XLPagerTabStrip (6.0.0)
 
 DEPENDENCIES:
@@ -48,6 +58,7 @@ DEPENDENCIES:
   - Nimble (~> 5.1.1)
   - NSObject+Rx (= 2.0.0)
   - ObjectMapper (~> 2.2)
+  - PINRemoteImage
   - Quick (~> 0.10.0)
   - R.swift (~> 3.1.0)
   - RxBlocking (~> 3.0.1)
@@ -57,16 +68,20 @@ DEPENDENCIES:
   - RxSwiftExt
   - SwiftDate (~> 4.0.7)
   - SwiftyColor (~> 1.0.0)
+  - UIImageViewAligned
   - XLPagerTabStrip (~> 6.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Moya: a3bbabe1e21a96066199a2dad874db1949510214
   Moya-ObjectMapper: b0d3d84d5f771044cc592af02b04a7bb2839b878
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   NSObject+Rx: 2a9cd801d9c847e6d2486cbad8d7701b67834e70
   ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
   R.swift: 14400e5784224d1e4e59a8fc5549198c7e8fe360
   R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
@@ -78,8 +93,9 @@ SPEC CHECKSUMS:
   RxSwiftExt: 492a6575cf6afabb8feeed3204bd0f9e2c695e67
   SwiftDate: a36d5ce7c86bed3ed92b583ccbf15045f374ac65
   SwiftyColor: 7fa09db14051bc5d7f539e1c4576665975225992
+  UIImageViewAligned: 73030dd085400e1ae7641203b5cc1546fa0495a8
   XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: 7b39fbe6043bd9dc1753b7beceaee771b2807684
+PODFILE CHECKSUM: c35817af7e865bdf4e18e2bac7257ab80298e1aa
 
 COCOAPODS: 1.1.1

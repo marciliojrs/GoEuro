@@ -38,6 +38,10 @@
 		AD6FD6B61E3B5AAF002C3FEA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B51E3B5AAF002C3FEA /* Coordinator.swift */; };
 		AD6FD6B81E3B5C10002C3FEA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B71E3B5C10002C3FEA /* ViewModel.swift */; };
 		AD6FD6BA1E3B5C23002C3FEA /* SectionViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */; };
+		AD6FD6BC1E3B5C89002C3FEA /* TravelItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6BB1E3B5C89002C3FEA /* TravelItemViewModel.swift */; };
+		AD6FD6BE1E3B5D00002C3FEA /* ObservableType+TravelMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6BD1E3B5D00002C3FEA /* ObservableType+TravelMode.swift */; };
+		AD6FD6C21E3B6270002C3FEA /* DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C11E3B6270002C3FEA /* DownloadableImage.swift */; };
+		AD6FD6C41E3B6294002C3FEA /* UIImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6C31E3B6294002C3FEA /* UIImageView+Rx.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -94,6 +98,10 @@
 		AD6FD6B51E3B5AAF002C3FEA /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AD6FD6B71E3B5C10002C3FEA /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelType.swift; sourceTree = "<group>"; };
+		AD6FD6BB1E3B5C89002C3FEA /* TravelItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelItemViewModel.swift; sourceTree = "<group>"; };
+		AD6FD6BD1E3B5D00002C3FEA /* ObservableType+TravelMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+TravelMode.swift"; sourceTree = "<group>"; };
+		AD6FD6C11E3B6270002C3FEA /* DownloadableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImage.swift; sourceTree = "<group>"; };
+		AD6FD6C31E3B6294002C3FEA /* UIImageView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rx.swift"; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +133,7 @@
 				AD6FD6AB1E3B58E3002C3FEA /* TrainsViewModel.swift */,
 				AD6FD6AD1E3B58F0002C3FEA /* BusesViewModel.swift */,
 				AD6FD6AF1E3B58FD002C3FEA /* FlightsViewModel.swift */,
+				AD6FD6BB1E3B5C89002C3FEA /* TravelItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 				6FD32CC67223591CC21EC998 /* Extensions */,
 				88CB00F82ACA0D8102420245 /* Protocols */,
 				AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */,
+				AD6FD6C11E3B6270002C3FEA /* DownloadableImage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -242,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5838781E3B4C5F0039B975 /* RxOperators */,
+				AD6FD6C31E3B6294002C3FEA /* UIImageView+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5838791E3B4C6B0039B975 /* ObservableType+Mappable.swift */,
+				AD6FD6BD1E3B5D00002C3FEA /* ObservableType+TravelMode.swift */,
 			);
 			path = RxOperators;
 			sourceTree = "<group>";
@@ -639,6 +651,8 @@
 				AD6FD6B81E3B5C10002C3FEA /* ViewModel.swift in Sources */,
 				AD6FD69E1E3B518B002C3FEA /* FlightsViewController.swift in Sources */,
 				AD6FD6A01E3B51D0002C3FEA /* BusesViewController.swift in Sources */,
+				AD6FD6C41E3B6294002C3FEA /* UIImageView+Rx.swift in Sources */,
+				AD6FD6BC1E3B5C89002C3FEA /* TravelItemViewModel.swift in Sources */,
 				AD58384D1E3A15920039B975 /* Providers.swift in Sources */,
 				AD6FD6B61E3B5AAF002C3FEA /* Coordinator.swift in Sources */,
 				AD5838461E3A13B10039B975 /* EnumKey.swift in Sources */,
@@ -654,9 +668,11 @@
 				AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */,
 				AD5838441E3A136F0039B975 /* Bus.swift in Sources */,
 				AD6FD6BA1E3B5C23002C3FEA /* SectionViewModelType.swift in Sources */,
+				AD6FD6C21E3B6270002C3FEA /* DownloadableImage.swift in Sources */,
 				AD58384B1E3A158A0039B975 /* GoEuroRestApi.swift in Sources */,
 				AD5838541E3A17D20039B975 /* R.generated.swift in Sources */,
 				AD5838401E3A135B0039B975 /* Flight.swift in Sources */,
+				AD6FD6BE1E3B5D00002C3FEA /* ObservableType+TravelMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

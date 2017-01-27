@@ -11,14 +11,18 @@ import RxCocoa
 
 class TrainsViewModel: ViewModel {
 
+    typealias SectionType = SectionViewModelType<TravelItemViewModel>
     private let apiClient: NetworkClient
 
     init(apiClient: NetworkClient = NetworkClient(provider: Providers.defaultProvider)) {
         self.apiClient = apiClient
     }
 
-    var trains: Observable<[Train]> {
+    var trains: Observable<[SectionType]> {
         return apiClient.fetchTrains()
+            .map { $0 as [TravelMode] }
+            .viewModels()
+            .map { [SectionViewModelType(viewModels: $0)] }
     }
 
 }

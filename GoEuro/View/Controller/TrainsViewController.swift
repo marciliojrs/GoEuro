@@ -8,8 +8,11 @@
 
 import UIKit
 import XLPagerTabStrip
+import RxDataSources
 
 final class TrainsViewController: BaseViewController {
+
+    fileprivate var dataSource = RxTableViewSectionedReloadDataSource<TrainsViewModel.SectionType>()
 
     let viewModel: TrainsViewModel
 
@@ -19,6 +22,34 @@ final class TrainsViewController: BaseViewController {
         self.viewModel = viewModel
 
         super.init()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        setup()
+    }
+
+}
+
+extension TrainsViewController {
+
+    fileprivate func setup() {
+        setupTableView()
+    }
+
+    private func setupTableView() {
+        dataSource.configureCell = { (_, tableView, indexPath, viewModel) in
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.travelCell, for: indexPath)!
+
+            cell.viewModel = viewModel
+
+            return cell
+        }
+
+        viewModel.trains
+            .bindTo(tableView.rx.items(dataSource: dataSource))
+            .addDisposableTo(rx_disposeBag)
     }
 
 }

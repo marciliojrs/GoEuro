@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NSObject_Rx
 
 class BaseViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class BaseViewController: UIViewController {
         var tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
 
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 92
         tableView.register(R.nib.travelCell)
 
         return tableView

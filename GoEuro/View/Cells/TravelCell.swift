@@ -16,4 +16,28 @@ class TravelCell: UITableViewCell {
     @IBOutlet weak var travelIntervalLabel: UILabel!
     @IBOutlet weak var travelTimeLabel: UILabel!
 
+    var viewModel: TravelItemViewModel! {
+        didSet {
+            viewModel.travelInterval
+                .drive(travelIntervalLabel.rx.text)
+                .addDisposableTo(rx_disposeBag)
+
+            viewModel.travelTime
+                .drive(travelTimeLabel.rx.text)
+                .addDisposableTo(rx_disposeBag)
+
+            viewModel.price
+                .drive(priceLabel.rx.text)
+                .addDisposableTo(rx_disposeBag)
+
+            viewModel.numberOfStops
+                .drive(stopsLabel.rx.text)
+                .addDisposableTo(rx_disposeBag)
+
+            viewModel.providerLogo
+                .drive(providerLogoImageView.rx.downloadableImage)
+                .addDisposableTo(rx_disposeBag)
+        }
+    }
+
 }

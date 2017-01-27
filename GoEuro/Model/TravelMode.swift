@@ -18,7 +18,7 @@ class TravelMode: Mappable {
     var numberOfStops: Int!
     var arrivalTime: String!
     var departureTime: String!
-    var price: String!
+    var price: NSDecimalNumber!
     var providerLogo: URL!
 
     required init?(map: Map) { }
@@ -28,7 +28,7 @@ class TravelMode: Mappable {
         numberOfStops   <- map[Key.numberOfStops]
         arrivalTime     <- map[Key.arrivalTime]
         departureTime   <- map[Key.departureTime]
-        price           <- map[Key.price]
+        price           <- (map[Key.price], NSDecimalNumberTransform())
         providerLogo    <- (map[Key.providerLogo], ProviderLogoTransfomer())
     }
 
