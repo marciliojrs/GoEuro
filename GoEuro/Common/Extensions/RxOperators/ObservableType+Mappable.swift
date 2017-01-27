@@ -23,13 +23,13 @@ extension ObservableType where E == Any {
         }
     }
 
-    func parseJSON<T: Mappable>() -> Observable<T> {
+    func parseJSON<T: Mappable>() -> Observable<T?> {
         return map { (json) in
             guard let json = json as? JSON else { return nil }
             guard let response = Mapper<T>().map(JSON: json) else { return nil }
 
             return  response
-        }.unwrap()
+        }
     }
 
 }

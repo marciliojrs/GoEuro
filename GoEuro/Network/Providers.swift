@@ -26,5 +26,5 @@ struct Providers {
     static let defaultProvider = RxMoyaProvider<ApiTargetType>(endpointClosure: endpointClosure, stubClosure: MoyaProvider.neverStub, plugins: [NetworkLoggerPlugin()])
 
     static let testProvider = RxMoyaProvider<ApiTargetType>(endpointClosure: endpointClosure, stubClosure: MoyaProvider.immediatelyStub)
-    
+
 }

@@ -55,5 +55,5 @@ extension GoEuroRestApi: TargetType {
     var url: String {
         return "\(baseURL)\(path)"
     }
-    
+
 }

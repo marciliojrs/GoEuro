@@ -10,5 +10,18 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
     var window: UIWindow?
+    private var coordinator: AppCoordinator!
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        window = UIWindow()
+        coordinator = AppCoordinator(window: window!)
+        coordinator.start()
+
+        window?.makeKeyAndVisible()
+
+        return true
+    }
+
 }

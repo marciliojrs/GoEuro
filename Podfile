@@ -23,7 +23,9 @@ abstract_target 'GoEuroCommon' do
   pod 'SwiftDate',             '~> 4.0.7'
   pod 'R.swift',               '~> 3.1.0'
 
-  target 'GoEuro' do end
+  target 'GoEuro' do
+      pod 'XLPagerTabStrip', '~> 6.0'
+  end
 
   target 'Tests' do	    
     pod 'Nimble',     '~> 5.1.1'

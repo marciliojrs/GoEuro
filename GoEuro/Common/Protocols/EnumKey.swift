@@ -17,5 +17,5 @@ extension Map {
     subscript(key: EnumKey) -> Map {
         return self[key.rawValue]
     }
-    
+
 }

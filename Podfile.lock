@@ -37,6 +37,7 @@ PODS:
     - RxSwift (~> 3.0)
   - SwiftDate (4.0.11)
   - SwiftyColor (1.0.0)
+  - XLPagerTabStrip (6.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.2)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - RxSwiftExt
   - SwiftDate (~> 4.0.7)
   - SwiftyColor (~> 1.0.0)
+  - XLPagerTabStrip (~> 6.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
@@ -76,7 +78,8 @@ SPEC CHECKSUMS:
   RxSwiftExt: 492a6575cf6afabb8feeed3204bd0f9e2c695e67
   SwiftDate: a36d5ce7c86bed3ed92b583ccbf15045f374ac65
   SwiftyColor: 7fa09db14051bc5d7f539e1c4576665975225992
+  XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: fcb0d96ede9a43201959a61437196eed460ac0dd
+PODFILE CHECKSUM: 7b39fbe6043bd9dc1753b7beceaee771b2807684
 
 COCOAPODS: 1.1.1
