@@ -36,6 +36,8 @@
 		AD6FD6B21E3B59F1002C3FEA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B11E3B59F1002C3FEA /* AppCoordinator.swift */; };
 		AD6FD6B41E3B59F9002C3FEA /* TravelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B31E3B59F9002C3FEA /* TravelCoordinator.swift */; };
 		AD6FD6B61E3B5AAF002C3FEA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B51E3B5AAF002C3FEA /* Coordinator.swift */; };
+		AD6FD6B81E3B5C10002C3FEA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B71E3B5C10002C3FEA /* ViewModel.swift */; };
+		AD6FD6BA1E3B5C23002C3FEA /* SectionViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -90,6 +92,8 @@
 		AD6FD6B11E3B59F1002C3FEA /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AD6FD6B31E3B59F9002C3FEA /* TravelCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelCoordinator.swift; sourceTree = "<group>"; };
 		AD6FD6B51E3B5AAF002C3FEA /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AD6FD6B71E3B5C10002C3FEA /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelType.swift; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -180,6 +184,7 @@
 			children = (
 				6FD32CC67223591CC21EC998 /* Extensions */,
 				88CB00F82ACA0D8102420245 /* Protocols */,
+				AD6FD6B91E3B5C23002C3FEA /* SectionViewModelType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			children = (
 				AD5838451E3A13B10039B975 /* EnumKey.swift */,
 				AD6FD6B51E3B5AAF002C3FEA /* Coordinator.swift */,
+				AD6FD6B71E3B5C10002C3FEA /* ViewModel.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -630,6 +636,7 @@
 				AD6FD6AE1E3B58F0002C3FEA /* BusesViewModel.swift in Sources */,
 				AD6FD6AC1E3B58E3002C3FEA /* TrainsViewModel.swift in Sources */,
 				AD6FD6B41E3B59F9002C3FEA /* TravelCoordinator.swift in Sources */,
+				AD6FD6B81E3B5C10002C3FEA /* ViewModel.swift in Sources */,
 				AD6FD69E1E3B518B002C3FEA /* FlightsViewController.swift in Sources */,
 				AD6FD6A01E3B51D0002C3FEA /* BusesViewController.swift in Sources */,
 				AD58384D1E3A15920039B975 /* Providers.swift in Sources */,
@@ -646,6 +653,7 @@
 				AD5838521E3A16EB0039B975 /* ProviderLogoTransformer.swift in Sources */,
 				AD58384F1E3A159B0039B975 /* NetworkClient.swift in Sources */,
 				AD5838441E3A136F0039B975 /* Bus.swift in Sources */,
+				AD6FD6BA1E3B5C23002C3FEA /* SectionViewModelType.swift in Sources */,
 				AD58384B1E3A158A0039B975 /* GoEuroRestApi.swift in Sources */,
 				AD5838541E3A17D20039B975 /* R.generated.swift in Sources */,
 				AD5838401E3A135B0039B975 /* Flight.swift in Sources */,

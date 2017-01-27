@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 
-class BusesViewModel {
+class BusesViewModel: ViewModel {
 
     private let apiClient: NetworkClient
 
