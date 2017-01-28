@@ -51,6 +51,14 @@
 		AD6FD6D51E3B9BBD002C3FEA /* Trains.json in Resources */ = {isa = PBXBuildFile; fileRef = AD6FD6D41E3B9BBD002C3FEA /* Trains.json */; };
 		AD6FD6D71E3B9C05002C3FEA /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6D61E3B9C05002C3FEA /* FileReader.swift */; };
 		AD6FD6D91E3B9C23002C3FEA /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6D81E3B9C23002C3FEA /* JSONReader.swift */; };
+		AD6FD6DB1E3B9CD6002C3FEA /* TravelItemViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6DA1E3B9CD6002C3FEA /* TravelItemViewModelSpec.swift */; };
+		AD6FD6E31E3BE0C7002C3FEA /* TrainsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6E21E3BE0C7002C3FEA /* TrainsViewModelSpec.swift */; };
+		AD6FD6E51E3BE2B4002C3FEA /* BusesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6E41E3BE2B4002C3FEA /* BusesViewModelSpec.swift */; };
+		AD6FD6E71E3BE2E3002C3FEA /* FlightsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6E61E3BE2E3002C3FEA /* FlightsViewModelSpec.swift */; };
+		AD6FD6E91E3BE496002C3FEA /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6E81E3BE496002C3FEA /* TestsAppDelegate.swift */; };
+		AD6FD6EB1E3BE4B8002C3FEA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6EA1E3BE4B8002C3FEA /* main.swift */; };
+		AD6FD6ED1E3BE6E6002C3FEA /* AppCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6EC1E3BE6E6002C3FEA /* AppCoordinatorSpec.swift */; };
+		AD6FD6EF1E3BE7FC002C3FEA /* TravelCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD6EE1E3BE7FC002C3FEA /* TravelCoordinatorSpec.swift */; };
 		DC632240DC58A6EFEB4031B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AA4DF04D6A06B017C3A71 /* Settings.bundle */; };
 		E699F33A2CE1045D9CD999AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */; };
 		ED704DBCFC016CC00ABE23FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80ED20870388BE6872C6D2 /* AppDelegate.swift */; };
@@ -120,6 +128,14 @@
 		AD6FD6D41E3B9BBD002C3FEA /* Trains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Trains.json; sourceTree = "<group>"; };
 		AD6FD6D61E3B9C05002C3FEA /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 		AD6FD6D81E3B9C23002C3FEA /* JSONReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		AD6FD6DA1E3B9CD6002C3FEA /* TravelItemViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelItemViewModelSpec.swift; sourceTree = "<group>"; };
+		AD6FD6E21E3BE0C7002C3FEA /* TrainsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainsViewModelSpec.swift; sourceTree = "<group>"; };
+		AD6FD6E41E3BE2B4002C3FEA /* BusesViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusesViewModelSpec.swift; sourceTree = "<group>"; };
+		AD6FD6E61E3BE2E3002C3FEA /* FlightsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewModelSpec.swift; sourceTree = "<group>"; };
+		AD6FD6E81E3BE496002C3FEA /* TestsAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
+		AD6FD6EA1E3BE4B8002C3FEA /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AD6FD6EC1E3BE6E6002C3FEA /* AppCoordinatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorSpec.swift; sourceTree = "<group>"; };
+		AD6FD6EE1E3BE7FC002C3FEA /* TravelCoordinatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelCoordinatorSpec.swift; sourceTree = "<group>"; };
 		CA0F460E49A05B7CEEF0ACA1 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB258DC2BE2DAC62F3D04E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -203,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				74E223985ACDA962D0A1C77B /* Info.plist */,
+				AD6FD6EA1E3BE4B8002C3FEA /* main.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -421,6 +438,12 @@
 		F49460C77EDB14CCDF576171 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				AD6FD6DA1E3B9CD6002C3FEA /* TravelItemViewModelSpec.swift */,
+				AD6FD6E21E3BE0C7002C3FEA /* TrainsViewModelSpec.swift */,
+				AD6FD6E41E3BE2B4002C3FEA /* BusesViewModelSpec.swift */,
+				AD6FD6E61E3BE2E3002C3FEA /* FlightsViewModelSpec.swift */,
+				AD6FD6EC1E3BE6E6002C3FEA /* AppCoordinatorSpec.swift */,
+				AD6FD6EE1E3BE7FC002C3FEA /* TravelCoordinatorSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -429,6 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				2A80ED20870388BE6872C6D2 /* AppDelegate.swift */,
+				AD6FD6E81E3BE496002C3FEA /* TestsAppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -490,6 +514,11 @@
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = GoEuro;
+				TargetAttributes = {
+					7A6A886E8A6E864CB98CD81D = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = E69C5F35E46574E4D2D2FC65 /* Build configuration list for PBXProject "GoEuro" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -674,6 +703,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6FD6ED1E3BE6E6002C3FEA /* AppCoordinatorSpec.swift in Sources */,
+				AD6FD6E31E3BE0C7002C3FEA /* TrainsViewModelSpec.swift in Sources */,
+				AD6FD6E71E3BE2E3002C3FEA /* FlightsViewModelSpec.swift in Sources */,
+				AD6FD6E51E3BE2B4002C3FEA /* BusesViewModelSpec.swift in Sources */,
+				AD6FD6DB1E3B9CD6002C3FEA /* TravelItemViewModelSpec.swift in Sources */,
+				AD6FD6EF1E3BE7FC002C3FEA /* TravelCoordinatorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +749,8 @@
 				AD6FD6C21E3B6270002C3FEA /* DownloadableImage.swift in Sources */,
 				AD6FD6C81E3B9066002C3FEA /* Appearance.swift in Sources */,
 				AD58384B1E3A158A0039B975 /* GoEuroRestApi.swift in Sources */,
+				AD6FD6E91E3BE496002C3FEA /* TestsAppDelegate.swift in Sources */,
+				AD6FD6EB1E3BE4B8002C3FEA /* main.swift in Sources */,
 				AD5838541E3A17D20039B975 /* R.generated.swift in Sources */,
 				AD5838401E3A135B0039B975 /* Flight.swift in Sources */,
 				AD6FD6BE1E3B5D00002C3FEA /* ObservableType+TravelMode.swift in Sources */,
@@ -854,6 +891,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoEuro.app/GoEuro";
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -862,9 +900,11 @@
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Tests/Resources/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -876,6 +916,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoEuro.app/GoEuro";
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -884,9 +925,12 @@
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Tests/Resources/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
