@@ -44,6 +44,8 @@ PODS:
   - RxSwift (3.1.0)
   - RxSwiftExt (2.1.0):
     - RxSwift (~> 3.0)
+  - SpringIndicator (1.4.1)
+  - StatefulViewController (3.0)
   - SwiftDate (4.0.11)
   - SwiftyColor (1.0.0)
   - UIImageViewAligned (0.0.1)
@@ -66,6 +68,8 @@ DEPENDENCIES:
   - RxDataSources (~> 1.0)
   - RxSwift (~> 3.0)
   - RxSwiftExt
+  - SpringIndicator
+  - StatefulViewController
   - SwiftDate (~> 4.0.7)
   - SwiftyColor (~> 1.0.0)
   - UIImageViewAligned
@@ -91,11 +95,13 @@ SPEC CHECKSUMS:
   RxDataSources: 1de77880bf5b7fcee42102adcd5a5d65e5b81541
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
   RxSwiftExt: 492a6575cf6afabb8feeed3204bd0f9e2c695e67
+  SpringIndicator: d2be83cf7dbab52d91d378a5d3a267187b4959e5
+  StatefulViewController: 4803bf900d44de26074344998e10e041113b5931
   SwiftDate: a36d5ce7c86bed3ed92b583ccbf15045f374ac65
   SwiftyColor: 7fa09db14051bc5d7f539e1c4576665975225992
   UIImageViewAligned: 73030dd085400e1ae7641203b5cc1546fa0495a8
   XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: c35817af7e865bdf4e18e2bac7257ab80298e1aa
+PODFILE CHECKSUM: 18adb0796601fcf05f32539953890496f9fbc021
 
 COCOAPODS: 1.1.1

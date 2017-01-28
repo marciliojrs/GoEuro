@@ -27,6 +27,8 @@ abstract_target 'GoEuroCommon' do
       pod 'XLPagerTabStrip', '~> 6.0'
       pod 'PINRemoteImage'
       pod 'UIImageViewAligned'
+      pod 'StatefulViewController'
+      pod 'SpringIndicator'
   end
 
   target 'Tests' do	    
