@@ -16,3 +16,7 @@ custom_rules:
     message: "catch statement should be on next line"
     match_kinds: keyword
     severity: error   
+variable_name:
+  excluded:
+    - id
+    - to

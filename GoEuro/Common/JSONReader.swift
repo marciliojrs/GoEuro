@@ -49,5 +49,5 @@ struct JSONReader {
     static func readJSONDataFrom(file: String) throws -> Data {
         return try FileReader.readDataFrom(file: file, extension: "json")
     }
-    
+
 }

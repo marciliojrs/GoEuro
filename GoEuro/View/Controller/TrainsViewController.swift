@@ -9,6 +9,7 @@
 import UIKit
 import XLPagerTabStrip
 import RxDataSources
+import StatefulViewController
 
 final class TrainsViewController: BaseViewController {
 
@@ -30,12 +31,27 @@ final class TrainsViewController: BaseViewController {
         setup()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        setupInitialViewState()
+    }
+
 }
 
-extension TrainsViewController {
+extension TrainsViewController: StatefulViewController {
+
+    func hasContent() -> Bool {
+        return viewModel.hasContent
+    }
+
+}
+
+extension TrainsViewController: LoadingStatePresentableViewController {
 
     fileprivate func setup() {
         setupTableView()
+        setupLoadingState()
     }
 
     private func setupTableView() {
@@ -49,6 +65,10 @@ extension TrainsViewController {
 
         viewModel.trains
             .bindTo(tableView.rx.items(dataSource: dataSource))
+            .addDisposableTo(rx_disposeBag)
+
+        viewModel.loadingState
+            .bindTo(rx.isLoading)
             .addDisposableTo(rx_disposeBag)
     }
 

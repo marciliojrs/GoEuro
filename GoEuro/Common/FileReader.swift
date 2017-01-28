@@ -63,5 +63,5 @@ struct FileReader {
             throw FileReaderError.fileNotFound("\(file).\(`extension`)")
         }
     }
-    
+
 }

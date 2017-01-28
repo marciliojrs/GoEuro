@@ -18,6 +18,7 @@ class BaseViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 92
         tableView.register(R.nib.travelCell)
+        tableView.separatorInset = .zero
 
         return tableView
     }()

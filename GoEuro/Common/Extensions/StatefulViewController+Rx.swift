@@ -22,5 +22,5 @@ extension Reactive where Base: StatefulViewController {
             }
         }
     }
-    
+
 }

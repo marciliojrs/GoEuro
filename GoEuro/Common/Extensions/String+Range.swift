@@ -29,5 +29,5 @@ extension String {
         let endIndex = index(from: range.upperBound)
         return substring(with: startIndex..<endIndex)
     }
-    
+
 }
