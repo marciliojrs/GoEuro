@@ -23,7 +23,7 @@ class TravelItemViewModelSpec: QuickSpec {
         describe("TravelItemViewModel") { 
             context("when instantiate with a valid TravelMode") {
                 beforeEach {
-                    let json: JSON = [Key.id.rawValue: 1, Key.arrivalTime.rawValue: "12:00", Key.departureTime.rawValue: "11:00", Key.numberOfStops.rawValue: 0, Key.price.rawValue: 100.00, Key.providerLogo.rawValue: ""]
+                    let json: JSON = [Key.id.rawValue: 1, Key.arrivalTime.rawValue: "12:00", Key.departureTime.rawValue: "11:00", Key.numberOfStops.rawValue: 0, Key.price.rawValue: 100.00, Key.providerLogo.rawValue: "http://url.com"]
                     let item = Mapper<TravelMode>().map(JSON: json)
                     viewModel = TravelItemViewModel(item: item!)
                 }
@@ -37,11 +37,14 @@ class TravelItemViewModelSpec: QuickSpec {
                         .toBlocking().toArray().first!
                     let travelTime: String = try! viewModel.travelTime
                         .toBlocking().toArray().first!
+                    let providerLogo: DownloadableImage = try! viewModel.providerLogo
+                        .toBlocking().toArray().first!
 
                     expect(numberOfStops) == "Direct"
                     expect(travelTime) == "1:00h"
                     expect(travelInterval) == "11:00 - 12:00"
                     expect(price.string) == "€100.00"
+                    expect(providerLogo) == DownloadableImage.remote(url: URL(string: "http://url.com")!, placeholder: nil)
                 }
             }
 
