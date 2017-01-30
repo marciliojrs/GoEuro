@@ -13,6 +13,9 @@ import SwiftDate
 final class ContainerViewController: ButtonBarPagerTabStripViewController {
 
     @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var sortBarButton: UIBarButtonItem!
+
+    var viewModel: ContainerViewModel!
 
     var pages: [UIViewController] = []
 
@@ -30,6 +33,11 @@ final class ContainerViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
 
         subtitleLabel.text = Date().string(format: .custom("dd MMM"))
+
+        sortBarButton.rx.tap
+            .subscribe(onNext: { [unowned self] in
+                self.viewModel.sortObservable.onNext(true)
+            }).addDisposableTo(rx_disposeBag)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }

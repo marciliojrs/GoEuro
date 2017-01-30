@@ -23,6 +23,7 @@
 		AD5838521E3A16EB0039B975 /* ProviderLogoTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */; };
 		AD5838541E3A17D20039B975 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838531E3A17D20039B975 /* R.generated.swift */; };
 		AD58387A1E3B4C6B0039B975 /* ObservableType+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5838791E3B4C6B0039B975 /* ObservableType+Mappable.swift */; };
+		AD5B6A851E3E8E26003E1AA3 /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B6A841E3E8E26003E1AA3 /* ContainerViewModel.swift */; };
 		AD6FD69C1E3B50E2002C3FEA /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD69B1E3B50E2002C3FEA /* ContainerViewController.swift */; };
 		AD6FD69E1E3B518B002C3FEA /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD69D1E3B518B002C3FEA /* FlightsViewController.swift */; };
 		AD6FD6A01E3B51D0002C3FEA /* BusesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FD69F1E3B51D0002C3FEA /* BusesViewController.swift */; };
@@ -102,6 +103,7 @@
 		AD5838511E3A16EB0039B975 /* ProviderLogoTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderLogoTransformer.swift; sourceTree = "<group>"; };
 		AD5838531E3A17D20039B975 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		AD5838791E3B4C6B0039B975 /* ObservableType+Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Mappable.swift"; sourceTree = "<group>"; };
+		AD5B6A841E3E8E26003E1AA3 /* ContainerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
 		AD6FD69B1E3B50E2002C3FEA /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		AD6FD69D1E3B518B002C3FEA /* FlightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
 		AD6FD69F1E3B51D0002C3FEA /* BusesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusesViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				AD6FD6AD1E3B58F0002C3FEA /* BusesViewModel.swift */,
 				AD6FD6AF1E3B58FD002C3FEA /* FlightsViewModel.swift */,
 				AD6FD6BB1E3B5C89002C3FEA /* TravelItemViewModel.swift */,
+				AD5B6A841E3E8E26003E1AA3 /* ContainerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				AD6FD6EB1E3BE4B8002C3FEA /* main.swift in Sources */,
 				AD5838541E3A17D20039B975 /* R.generated.swift in Sources */,
 				AD5838401E3A135B0039B975 /* Flight.swift in Sources */,
+				AD5B6A851E3E8E26003E1AA3 /* ContainerViewModel.swift in Sources */,
 				AD6FD6BE1E3B5D00002C3FEA /* ObservableType+TravelMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

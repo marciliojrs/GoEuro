@@ -14,10 +14,12 @@ struct NetworkClient {
 
     typealias JSON = [String: Any]
 
+    fileprivate let scheduler: SerialDispatchQueueScheduler
     fileprivate let networkProvider: RxMoyaProvider<Providers.ApiTargetType>
 
     init(provider: RxMoyaProvider<Providers.ApiTargetType> = Providers.defaultProvider) {
         self.networkProvider = provider
+        self.scheduler = SerialDispatchQueueScheduler(qos: .background)
     }
 
 }
@@ -27,7 +29,7 @@ extension NetworkClient {
     func fetchTrains() -> Observable<[Train]> {
         return networkProvider
             .request(.trains)
-            .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+            .timeout(2, scheduler: SerialDispatchQueueScheduler(qos: .userInteractive))
             .mapJSON()
             .parseJSONArray()
     }
@@ -35,7 +37,7 @@ extension NetworkClient {
     func fetchBuses() -> Observable<[Bus]> {
         return networkProvider
             .request(.buses)
-            .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+            .timeout(2, scheduler: SerialDispatchQueueScheduler(qos: .userInteractive))
             .mapJSON()
             .parseJSONArray()
     }
@@ -43,7 +45,7 @@ extension NetworkClient {
     func fetchFlights() -> Observable<[Flight]> {
         return networkProvider
             .request(.flights)
-            .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+            .timeout(2, scheduler: SerialDispatchQueueScheduler(qos: .userInteractive))
             .mapJSON()
             .parseJSONArray()
     }

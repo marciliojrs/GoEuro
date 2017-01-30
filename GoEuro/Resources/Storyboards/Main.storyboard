@@ -25,7 +25,7 @@
                     <navigationItem key="navigationItem" id="RGP-Ks-BG3">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="9A4-GR-S0y">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin - Munich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWo-lQ-bGv">
@@ -52,8 +52,10 @@
                                 <constraint firstAttribute="trailing" secondItem="aWo-lQ-bGv" secondAttribute="trailing" id="vj5-Ik-Ppn"/>
                             </constraints>
                         </view>
+                        <barButtonItem key="rightBarButtonItem" image="sort" id="NVy-YA-5NH"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="sortBarButton" destination="NVy-YA-5NH" id="mZG-Ak-eaR"/>
                         <outlet property="subtitleLabel" destination="Zb5-Wp-e7F" id="sJo-6Y-PEG"/>
                     </connections>
                 </viewController>
@@ -66,7 +68,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Riv-xg-J7o" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="dyS-Id-pGS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="dyS-Id-pGS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -80,4 +82,7 @@
             <point key="canvasLocation" x="-266.39999999999998" y="-65.217391304347828"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sort" width="32" height="32"/>
+    </resources>
 </document>

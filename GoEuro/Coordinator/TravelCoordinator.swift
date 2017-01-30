@@ -17,16 +17,24 @@ final class TravelCoordinator: Coordinator {
         self.window = window
     }
 
-    func start() {
+    lazy var containerViewController: ContainerViewController? = {
         guard let navigationController = R.storyboard.main.instantiateInitialViewController(),
-            let viewController = navigationController.topViewController as? ContainerViewController else { return }
+            let viewController = navigationController.topViewController as? ContainerViewController else { return nil }
 
-        let flightsViewController = FlightsViewController(viewModel: FlightsViewModel())
-        let busesViewController = BusesViewController(viewModel: BusesViewModel())
-        let trainsViewController = TrainsViewController(viewModel: TrainsViewModel())
+        return viewController
+    }()
+
+    func start() {
+        guard let viewController = containerViewController else { return }
+
+        viewController.viewModel = ContainerViewModel()
+
+        let flightsViewController = FlightsViewController(viewModel: FlightsViewModel(coordinator: self, sortObservable: viewController.viewModel.sortObservable))
+        let busesViewController = BusesViewController(viewModel: BusesViewModel(coordinator: self, sortObservable: viewController.viewModel.sortObservable))
+        let trainsViewController = TrainsViewController(viewModel: TrainsViewModel(coordinator: self, sortObservable: viewController.viewModel.sortObservable))
         viewController.pages = [flightsViewController, busesViewController, trainsViewController]
 
-        window.rootViewController = navigationController
+        window.rootViewController = viewController.navigationController
     }
 
 }
